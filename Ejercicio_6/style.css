@@ -1,0 +1,130 @@
+@import url("https://fonts.cdnfonts.com/css/thegoodmonolith");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1818;
+  color: #f0f0f0;
+  font-family: "TheGoodMonolith", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255 255 255 / 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+label {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  user-select: none;
+}
+
+input[type="number"],
+select {
+  padding: 8px 10px;
+  font-family: "TheGoodMonolith", monospace;
+  font-size: 16px;
+  color: #f0f0f0;
+  background: rgba(255 255 255 / 0.1);
+  border: 1px solid rgba(255 255 255 / 0.2);
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #fff;
+  background: rgba(255 255 255 / 0.2);
+}
+
+button#calcular {
+  margin-top: 10px;
+  padding: 10px 0;
+  font-family: "TheGoodMonolith", monospace;
+  font-size: 16px;
+  background: transparent;
+  color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button#calcular:hover:not(:disabled) {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+button#calcular:disabled {
+  border-color: rgba(240, 240, 240, 0.3);
+  color: rgba(240, 240, 240, 0.3);
+  cursor: not-allowed;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  user-select: text;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f44;
+  text-align: center;
+}
+
+select {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+select option {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+.verde {
+  color: #60d460;
+}
+
+.amarillo {
+  color: #e6d84b;
+}
+
+.naranja {
+  color: #f59f3f;
+}
+
+.rojo {
+  color: #f54b4b;
+}
