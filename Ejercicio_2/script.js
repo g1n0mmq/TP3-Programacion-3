@@ -3,9 +3,6 @@ const palabras = ["manzana", "banana", "pera", "durazno", "frutilla", "mango"];
 const form = document.getElementById("formulario");
 const inputPalabra = document.getElementById("inputPalabra");
 const resultado = document.getElementById("resultado");
-const listaOriginal = document.getElementById("listaOriginal");
-
-mostrarListaOriginal();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -30,6 +27,4 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-function mostrarListaOriginal() {
-  listaOriginal.innerHTML = palabras.map(p => `<li>${p}</li>`).join("");
-}
+
